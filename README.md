@@ -2,7 +2,7 @@
 
 A full-fledged **Java + MySQL project** that integrates with the **Dog CEO API** to fetch, store, and display **dog breeds, sub-breeds, and images** using **JDBC**, **Gson**, and a **layered architecture**.  
 
-📚 This project demonstrates **API integration**, **database operations**, and **clean architecture design** — perfect for learning backend fundamentals with real-world data.  
+📚 This project demonstrates **API integration**, **database operations**, and **clean architecture design**.  
 
 ---
 
@@ -16,6 +16,8 @@ It allows users to:
 - 📊 **Retrieve, display, and filter** the stored data via an interactive **command-line menu**.
 
 This project demonstrates a complete **end-to-end data flow** between the API and database:
+
+### API → Service → DAO → Database → Menu  
 
 ---
 
@@ -81,12 +83,15 @@ com.learn.DOG_API_PROJECT_JDBC
 CREATE DATABASE dog_api_db;
 USE dog_api_db;
 ```
+2️⃣ Create Tables
+### Table 1: breeds
 ```
 CREATE TABLE breeds (
     breed_id INT AUTO_INCREMENT PRIMARY KEY,
     breed_name VARCHAR(100) NOT NULL
 );
 ```
+### Table 2: sub_breeds
 ```
 
 CREATE TABLE sub_breeds (
@@ -96,6 +101,7 @@ CREATE TABLE sub_breeds (
     FOREIGN KEY (breed_id) REFERENCES breeds(breed_id)
 );
 ```
+### Table 3: images
 ```
 
 CREATE TABLE images (
@@ -114,9 +120,9 @@ CREATE TABLE images (
 
 ### 🗂️ db.properties  
 ```properties
-db_user = root  
-db_password = <your_password>  
-db_url = jdbc:mysql://127.0.0.1:3306/dog_api_db  
+db_user = <your_user_name>
+db_password = <your_password>
+db_url = jdbc:mysql://127.0.0.1:3306/<your_data_base_name>
 
 ```
 
@@ -145,16 +151,12 @@ This project follows a **clean multi-layer architecture** that ensures modularit
 
 ### ▶ **Main Menu**
 
-```
-API Operations
-
-Save API Data to Database
-
-Get Data from Database
-
-Exit
-```
-
+| 🧩 **Option** | 📝 **Description** |
+|---------------|--------------------|
+| 1 | API Operations |
+| 2 | Save API Data to Database |
+| 3 | Get Data from Database |
+| 4 | Exit |
 
 ---
 
@@ -232,9 +234,9 @@ Add the following dependencies to your `pom.xml`:
 
 Update your MySQL credentials in src/main/resources/db.properties:
 ```
-db_user = <user_name>
+db_user = <your_user_name>
 db_password = <your_password>
-db_url = jdbc:mysql://127.0.0.1:3306/<data_base_name>
+db_url = jdbc:mysql://127.0.0.1:3306/<your_data_base_name>
 
 ```
 ### 4️⃣ Run the Project
@@ -248,4 +250,3 @@ Fetch data from the Dog CEO API 🐶
 Store it into MySQL 💾
 
 Retrieve and view data 🔍
-
