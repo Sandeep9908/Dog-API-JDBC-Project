@@ -1,4 +1,4 @@
-# 🐕 Dog API JDBC Project by Sandeep Kumar Reddy Chalapala 🐾  
+# 🐕 Dog API JDBC Project  🐾  
 
 A full-fledged **Java + MySQL project** that integrates with the **Dog CEO API** to fetch, store, and display **dog breeds, sub-breeds, and images** using **JDBC**, **Gson**, and a **layered architecture**.  
 
