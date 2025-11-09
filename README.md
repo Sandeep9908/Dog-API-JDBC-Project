@@ -254,3 +254,24 @@ Fetch data from the Dog CEO API 🐶
 Store it into MySQL 💾
 
 Retrieve and view data 🔍
+
+
+## 📌 Future Enhancements  
+
+- 🚀 **GUI Interface using JavaFX or Swing**  
+  Add a graphical user interface for better interactivity instead of the command-line menu.  
+
+- 🧠 **AI-Based Breed Recommender System**  
+  Suggest dog breeds based on user preferences such as size, temperament, and lifestyle.  
+
+- 📸 **Image Viewer Integration**  
+  Display dog images directly within the application using JavaFX or web embedding.  
+
+- 📊 **Export Database Data to CSV / Excel**  
+  Provide an option to export breed, sub-breed, and image data for analysis or reporting.  
+
+## 👨‍💻 Author  
+
+**Sandeep Kumar Reddy Chalapala**  
+📧 [chalapalasandeepkumarreddy@gmail.com](mailto:chalapalasandeepkumarreddy@gmail.com)  
+
