@@ -89,14 +89,14 @@ USE dog_api_db;
 ```
 2️⃣ Create Tables
 ### Table 1: breeds
-```
+```sql
 CREATE TABLE breeds (
     breed_id INT AUTO_INCREMENT PRIMARY KEY,
     breed_name VARCHAR(100) NOT NULL
 );
 ```
 ### Table 2: sub_breeds
-```
+```sql
 
 CREATE TABLE sub_breeds (
     sub_breed_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -106,7 +106,7 @@ CREATE TABLE sub_breeds (
 );
 ```
 ### Table 3: images
-```
+```sql
 
 CREATE TABLE images (
     image_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -237,7 +237,7 @@ Add the following dependencies to your `pom.xml`:
 ### 3️⃣ Configure Database
 
 Update your MySQL credentials in src/main/resources/db.properties:
-```
+```properties
 db_user = <your_user_name>
 db_password = <your_password>
 db_url = jdbc:mysql://127.0.0.1:3306/<your_data_base_name>
